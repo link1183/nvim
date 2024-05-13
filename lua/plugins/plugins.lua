@@ -1,5 +1,71 @@
 local plugins = {
   {
+    "folke/noice.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("noice").setup {
+        views = {
+          cmdline_popup = {
+            position = {
+              row = 5,
+              col = "50%",
+            },
+            size = {
+              width = 60,
+              height = "auto",
+            },
+          },
+          popupmenu = {
+            relative = "editor",
+            position = {
+              row = 8,
+              col = "50%",
+            },
+            size = {
+              width = 60,
+              height = 10,
+            },
+            border = {
+              style = "rounded",
+              padding = { 0, 1 },
+            },
+            win_options = {
+              winhighlight = { Normal = "Normal", FloatBorder = "DiagnosticInfo" },
+            },
+          },
+        },
+      }
+    end,
+    dependencies = {
+      -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+      "MunifTanjim/nui.nvim",
+      -- OPTIONAL:
+      --   `nvim-notify` is only needed, if you want to use the notification view.
+      --   If not available, we use `mini` as the fallback
+      "rcarriga/nvim-notify",
+    },
+  },
+  {
+    "tpope/vim-dadbod",
+  },
+  {
+    "kristijanhusak/vim-dadbod-ui",
+    dependencies = {
+      { "tpope/vim-dadbod", lazy = true },
+      { "kristijanhusak/vim-dadbod-completion", ft = { "sql", "mysql", "plsql" }, lazy = true },
+    },
+    cmd = {
+      "DBUI",
+      "DBUIToggle",
+      "DBUIAddConnection",
+      "DBUIFindBuffer",
+    },
+    init = function()
+      -- Your DBUI configuration
+      vim.g.db_ui_use_nerd_fonts = 1
+    end,
+  },
+  {
     "jose-elias-alvarez/null-ls.nvim",
     event = "VeryLazy",
     opts = function()
@@ -321,9 +387,9 @@ local plugins = {
     "dreamsofcode-io/ChatGPT.nvim",
     event = "VeryLazy",
     config = function()
-      require("chatgpt").setup()({
+      require("chatgpt").setup() {
         async_api_key_cmd = "pass show api/openai",
-      })
+      }
     end,
     dependencies = {
       "MunifTanjim/nui.nvim",

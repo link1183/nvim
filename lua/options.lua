@@ -52,5 +52,4 @@ opt.termguicolors = true
 
 opt.hidden = true
 opt.history = 100
-opt.lazyredraw = true
 opt.synmaxcol = 240
