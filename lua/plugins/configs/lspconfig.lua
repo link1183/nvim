@@ -5,8 +5,11 @@ local capabilities = require("nvchad.configs.lspconfig").capabilities
 local lspconfig = require "lspconfig"
 
 local servers = {
+  "html",
+  "cssls",
   "pyright",
   "ruff_lsp",
+  "jdtls",
 }
 
 for _, lsp in ipairs(servers) do

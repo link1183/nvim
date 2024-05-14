@@ -1,6 +1,8 @@
 require("lint").linters_by_ft = {
+  -- Those are mason plugins
   javascript = { "eslint" },
   typescript = { "eslint" },
+  python = { "mypy" },
 }
 
 vim.api.nvim_create_autocmd({ "BufWritePost" }, {

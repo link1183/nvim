@@ -1,5 +1,6 @@
 local options = {
   formatters_by_ft = {
+    -- These formatters are Mason plugins, loaded in mason.lua's ensure installed table
     lua = { "stylua" },
     css = { "prettier" },
     html = { "prettier" },
