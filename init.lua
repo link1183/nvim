@@ -100,7 +100,7 @@ require("lazy").setup({
   },
 
   {
-    import = "plugins.plugins",
+    import = "plugins",
   },
 }, lazy_config)
 
