@@ -1,12 +1,5 @@
 return {
   {
-    "jose-elias-alvarez/null-ls.nvim",
-    event = "VeryLazy",
-    opts = function()
-      return require "plugins.configs.null-ls"
-    end,
-  },
-  {
     "saecki/crates.nvim",
     ft = { "rust", "toml" },
     config = function(_, opts)
