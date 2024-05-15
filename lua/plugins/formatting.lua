@@ -1,5 +1,6 @@
 return {
   {
+    -- Nvim formatter
     "stevearc/conform.nvim",
     event = "BufWritePre",
     config = function()
@@ -7,6 +8,7 @@ return {
     end,
   },
   {
+    -- Format on save
     "mhartington/formatter.nvim",
     event = "VeryLazy",
     opts = function()
@@ -14,10 +16,24 @@ return {
     end,
   },
   {
+    -- Linter for nvim
     "mfussenegger/nvim-lint",
     event = "VeryLazy",
     config = function()
       require "plugins.configs.lint"
     end,
+  },
+  {
+    -- Formatting, automatically adjusts shiftwidth and expandtab based on the current file
+    "tpope/vim-sleuth",
+    event = "VeryLazy",
+  },
+  {
+    -- Trims whitespaces and lines
+    "cappyzawa/trim.nvim",
+    event = "VeryLazy",
+    opts = {
+      ft_blocklist = { "markdown" },
+    },
   },
 }

@@ -4,22 +4,6 @@ local capabilities = require("nvchad.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
 
-local servers = {
-  "html",
-  "cssls",
-  "pyright",
-  "ruff_lsp",
-  "jdtls",
-}
-
-for _, lsp in ipairs(servers) do
-  lspconfig[lsp].setup {
-    on_attach = on_attach,
-    capabilities = capabilities,
-    filetypes = { "python" },
-  }
-end
-
 local function organize_imports()
   local params = {
     command = "_typescript.organizeImports",
@@ -27,6 +11,42 @@ local function organize_imports()
   }
   vim.lsp.buf.execute_command(params)
 end
+
+lspconfig.lua_ls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "lua" },
+}
+
+lspconfig.html.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "html" },
+}
+
+lspconfig.cssls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "css", "scss" },
+}
+
+lspconfig.pyright.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "python" },
+}
+
+lspconfig.jdtls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "java" },
+}
+
+lspconfig.ruff_lsp.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "python" },
+}
 
 lspconfig.tsserver.setup {
   on_attach = on_attach,

@@ -1,19 +1,10 @@
 return {
   {
-    "tpope/vim-sleuth",
-    event = "VeryLazy",
-  },
-  {
-    "cappyzawa/trim.nvim",
-    event = "VeryLazy",
-    opts = {
-      ft_blocklist = { "markdown" },
-    },
-  },
-  {
+    -- Icons for nvim-tree
     "nvim-tree/nvim-web-devicons",
   },
   {
+    -- Status line
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
     event = "VeryLazy",
@@ -28,6 +19,7 @@ return {
   },
   -- Only load whichkey after all the gui
   {
+    -- Adds help for keys
     "folke/which-key.nvim",
     keys = { "<leader>", "<c-r>", "<c-w>", '"', "'", "`", "c", "v", "g" },
     cmd = "WhichKey",
@@ -40,6 +32,7 @@ return {
     end,
   },
   {
+    -- Vim API stuff
     "nvim-neotest/nvim-nio",
   },
 }
