@@ -2,7 +2,6 @@ local cmp = require "cmp"
 
 cmp.setup.filetype({ "sql" }, {
   sources = {
-    { name = "vim-dadbod-completion" },
     { name = "buffer" },
   },
 })
@@ -14,7 +13,6 @@ return {
     { name = "path" },
     { name = "luasnip" },
     { name = "nvim_lua" },
-    { name = "vim-dadbod-completion" },
   },
   snippet = {
     expand = function(args)
