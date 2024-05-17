@@ -1,5 +1,6 @@
 return {
   ensure_installed = {
+    "none-ls",
     "black",
     "debugpy",
     "mypy",
