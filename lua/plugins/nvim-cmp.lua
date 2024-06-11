@@ -7,6 +7,15 @@ return {
       "hrsh7th/cmp-nvim-lsp",
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
+      {
+        "Saecki/crates.nvim",
+        event = { "BufRead Cargo.toml" },
+        opts = {
+          completion = {
+            cmp = { enabled = true },
+          },
+        },
+      },
     },
     -- Not all LSP servers add brackets when completing a function.
     -- To better deal with this, LazyVim adds a custom option to cmp,
@@ -44,6 +53,7 @@ return {
         sources = cmp.config.sources({
           { name = "nvim_lsp" },
           { name = "path" },
+          { name = "crates" },
         }, {
           { name = "buffer" },
         }),

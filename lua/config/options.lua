@@ -83,7 +83,7 @@ opt.autoindent = true -- Copy indent from previous line
 opt.copyindent = true -- Copy the structure of the previous line's indent
 opt.autoread = true -- Automatically reload file if modified outside of Neovim
 opt.hlsearch = true -- Highlight on search
-opt.incsearch = true -- incremental highlighting on search
+opt.incsearch = true -- Incremental highlighting on search
 
 if vim.fn.has("nvim-0.10") == 1 then
   opt.smoothscroll = true
