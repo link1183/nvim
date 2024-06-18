@@ -31,6 +31,11 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.ruby" },
     { import = "lazyvim.plugins.extras.lang.yaml" },
     { import = "lazyvim.plugins.extras.lang.toml" },
+    { import = "lazyvim.plugins.extras.lang.rust" },
+    { import = "lazyvim.plugins.extras.lang.sql" },
+    { import = "lazyvim.plugins.extras.lang.angular" },
+    { import = "lazyvim.plugins.extras.lang.git" },
+    { import = "lazyvim.plugins.extras.lang.git" },
 
     -- Linting
     { import = "lazyvim.plugins.extras.linting.eslint" },
@@ -40,6 +45,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.coding.luasnip" },
     { import = "lazyvim.plugins.extras.coding.mini-surround" },
     { import = "lazyvim.plugins.extras.coding.yanky" },
+    { import = "lazyvim.plugins.extras.coding.copilot" },
 
     -- DAP stuff
     { import = "lazyvim.plugins.extras.dap.core" },
@@ -55,6 +61,7 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.editor.mini-move" },
     { import = "lazyvim.plugins.extras.editor.outline" },
     { import = "lazyvim.plugins.extras.editor.refactoring" },
+    { import = "lazyvim.plugins.extras.editor.fzf" },
 
     -- Formatting stuff
     { import = "lazyvim.plugins.extras.formatting.black" },
@@ -75,6 +82,7 @@ require("lazy").setup({
     -- import/override with your plugins
     { import = "plugins" },
   },
+  install = { colorscheme = { "catppuccin" } },
   defaults = {
     lazy = false,
     version = false, -- always use the latest git commit
