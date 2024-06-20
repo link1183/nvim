@@ -11,6 +11,7 @@ return {
         dashboard = true,
         flash = true,
         gitsigns = true,
+        harpoon = true,
         headlines = true,
         illuminate = true,
         indent_blankline = { enabled = true },
@@ -27,6 +28,9 @@ return {
             warnings = { "undercurl" },
             information = { "undercurl" },
           },
+          inlay_hints = {
+            background = true,
+          },
         },
         navic = { enabled = true, custom_bg = "lualine" },
         neotest = true,
@@ -39,6 +43,12 @@ return {
         treesitter_context = true,
         which_key = true,
       },
+    },
+  },
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "catppuccin",
     },
   },
 }

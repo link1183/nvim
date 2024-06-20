@@ -82,10 +82,9 @@ require("lazy").setup({
     -- import/override with your plugins
     { import = "plugins" },
   },
-  install = { colorscheme = { "catppuccin" } },
   defaults = {
     lazy = false,
-    version = false, -- always use the latest git commit
+    version = true,
   },
   checker = { enabled = true }, -- automatically check for plugin updates
   performance = {
