@@ -84,7 +84,7 @@ require("lazy").setup({
   },
   defaults = {
     lazy = false,
-    version = true,
+    version = false,
   },
   checker = { enabled = true }, -- automatically check for plugin updates
   performance = {
