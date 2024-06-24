@@ -6,5 +6,5 @@ debug
 foo.*
 *.log
 data
-./lazy-lock.json
+lazy-lock.json
 lua/plugins/disabled/
