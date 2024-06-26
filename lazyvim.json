@@ -1,6 +1,8 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.lang.toml"
+    "lazyvim.plugins.extras.editor.inc-rename",
+    "lazyvim.plugins.extras.lang.toml",
+    "lazyvim.plugins.extras.util.mini-hipatterns"
   ],
   "news": {
     "NEWS.md": "6077"
