@@ -11,10 +11,10 @@ map({ "n", "x" }, "k", "v:count == 0 ? 'gk' : 'k'", { desc = "Up", expr = true, 
 map({ "n", "x" }, "<Up>", "v:count == 0 ? 'gk' : 'k'", { desc = "Up", expr = true, silent = true })
 
 -- Move to window using the <ctrl> hjkl keys
-map("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>", { desc = "Go to Left Window", remap = true })
-map("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>", { desc = "Go to Lower Window", remap = true })
-map("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>", { desc = "Go to Upper Window", remap = true })
-map("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>", { desc = "Go to Right Window", remap = true })
+map("n", "<C-h>", "<cmd> NvimTmuxNavigateLeft<CR>", { desc = "Go to Left Window", remap = true })
+map("n", "<C-j>", "<cmd> NvimTmuxNavigateDown<CR>", { desc = "Go to Lower Window", remap = true })
+map("n", "<C-k>", "<cmd> NvimTmuxNavigateUp<CR>", { desc = "Go to Upper Window", remap = true })
+map("n", "<C-l>", "<cmd> NvimTmuxNavigateRight<CR>", { desc = "Go to Right Window", remap = true })
 
 -- Resize window using <ctrl> arrow keys
 map("n", "<C-Up>", "<cmd>resize +2<cr>", { desc = "Increase Window Height" })
