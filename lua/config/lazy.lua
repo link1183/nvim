@@ -10,61 +10,60 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   spec = {
-    { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    { "LazyVim/LazyVim", import = "lazyvim.plugins", version = "*" },
 
     -- UI stuff
-    { import = "lazyvim.plugins.extras.ui.edgy" },
-    { import = "lazyvim.plugins.extras.ui.mini-indentscope" },
-    { import = "lazyvim.plugins.extras.ui.treesitter-context" },
+    { import = "lazyvim.plugins.extras.ui.edgy", version = "*" },
+    { import = "lazyvim.plugins.extras.ui.mini-indentscope", version = "*" },
+    { import = "lazyvim.plugins.extras.ui.treesitter-context", version = "*" },
 
     -- Languages
-    { import = "lazyvim.plugins.extras.lang.python" },
-    { import = "lazyvim.plugins.extras.lang.json" },
-    { import = "lazyvim.plugins.extras.lang.docker" },
-    { import = "lazyvim.plugins.extras.lang.markdown" },
-    { import = "lazyvim.plugins.extras.lang.yaml" },
-    { import = "lazyvim.plugins.extras.lang.toml" },
-    { import = "lazyvim.plugins.extras.lang.rust" },
-    { import = "lazyvim.plugins.extras.lang.sql" },
-    { import = "lazyvim.plugins.extras.lang.angular" },
-    { import = "lazyvim.plugins.extras.lang.git" },
+    { import = "lazyvim.plugins.extras.lang.python", version = "*" },
+    { import = "lazyvim.plugins.extras.lang.json", version = "*" },
+    { import = "lazyvim.plugins.extras.lang.docker", version = "*" },
+    { import = "lazyvim.plugins.extras.lang.markdown", version = "*" },
+    { import = "lazyvim.plugins.extras.lang.yaml", version = "*" },
+    { import = "lazyvim.plugins.extras.lang.toml", version = "*" },
+    { import = "lazyvim.plugins.extras.lang.rust", version = "*" },
+    { import = "lazyvim.plugins.extras.lang.sql", version = "*" },
+    { import = "lazyvim.plugins.extras.lang.angular", version = "*" },
+    { import = "lazyvim.plugins.extras.lang.git", version = "*" },
 
     -- Linting
-    { import = "lazyvim.plugins.extras.linting.eslint" },
+    { import = "lazyvim.plugins.extras.linting.eslint", version = "*" },
 
     -- Coding extras
-    { import = "lazyvim.plugins.extras.coding.copilot-chat" },
-    { import = "lazyvim.plugins.extras.coding.luasnip" },
-    { import = "lazyvim.plugins.extras.coding.mini-surround" },
-    { import = "lazyvim.plugins.extras.coding.yanky" },
-    { import = "lazyvim.plugins.extras.coding.copilot" },
+    { import = "lazyvim.plugins.extras.coding.copilot-chat", version = "*" },
+    { import = "lazyvim.plugins.extras.coding.luasnip", version = "*" },
+    { import = "lazyvim.plugins.extras.coding.mini-surround", version = "*" },
+    { import = "lazyvim.plugins.extras.coding.yanky", version = "*" },
 
     -- DAP stuff
-    { import = "lazyvim.plugins.extras.dap.core" },
-    { import = "lazyvim.plugins.extras.dap.nlua" },
+    { import = "lazyvim.plugins.extras.dap.core", version = "*" },
+    { import = "lazyvim.plugins.extras.dap.nlua", version = "*" },
 
     -- Editor stuff
-    { import = "lazyvim.plugins.extras.editor.dial" },
-    { import = "lazyvim.plugins.extras.editor.harpoon2" },
-    { import = "lazyvim.plugins.extras.editor.illuminate" },
-    { import = "lazyvim.plugins.extras.editor.mini-diff" },
-    { import = "lazyvim.plugins.extras.editor.mini-move" },
-    { import = "lazyvim.plugins.extras.editor.refactoring" },
-    { import = "lazyvim.plugins.extras.editor.fzf" },
+    { import = "lazyvim.plugins.extras.editor.dial", version = "*" },
+    { import = "lazyvim.plugins.extras.editor.harpoon2", version = "*" },
+    { import = "lazyvim.plugins.extras.editor.illuminate", version = "*" },
+    { import = "lazyvim.plugins.extras.editor.mini-diff", version = "*" },
+    { import = "lazyvim.plugins.extras.editor.mini-move", version = "*" },
+    { import = "lazyvim.plugins.extras.editor.refactoring", version = "*" },
+    { import = "lazyvim.plugins.extras.editor.fzf", version = "*" },
 
     -- Formatting stuff
-    { import = "lazyvim.plugins.extras.formatting.black" },
-    { import = "lazyvim.plugins.extras.formatting.prettier" },
+    { import = "lazyvim.plugins.extras.formatting.black", version = "*" },
+    { import = "lazyvim.plugins.extras.formatting.prettier", version = "*" },
 
     -- LSP stuff
-    { import = "lazyvim.plugins.extras.lsp.neoconf" },
-    { import = "lazyvim.plugins.extras.lsp.none-ls" },
+    { import = "lazyvim.plugins.extras.lsp.neoconf", version = "*" },
+    { import = "lazyvim.plugins.extras.lsp.none-ls", version = "*" },
 
     -- Test stuff
-    { import = "lazyvim.plugins.extras.test.core" },
+    { import = "lazyvim.plugins.extras.test.core", version = "*" },
 
     -- Utils
-    { import = "lazyvim.plugins.extras.util.dot" },
+    { import = "lazyvim.plugins.extras.util.dot", version = "*" },
 
     -- import/override with your plugins
     { import = "plugins" },

@@ -1,6 +1,7 @@
 return {
   {
     "catppuccin/nvim",
+    version = "*",
     lazy = true,
     name = "catppuccin",
     opts = {
